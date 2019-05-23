@@ -7,6 +7,8 @@ import { HeaderComponentComponent } from './header-component/header-component.co
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ConditionalComponent } from './conditional/conditional.component';
+import { MessageComponent } from './message/message.component';
+import { InputOutputComponent } from './input-output/input-output.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ConditionalComponent } from './conditional/conditional.component';
     HeaderComponentComponent,
     InterpolationComponent,
     PropertyBindingComponent,
-    ConditionalComponent
+    ConditionalComponent,
+    MessageComponent,
+    InputOutputComponent
   ],
   imports: [
     BrowserModule,

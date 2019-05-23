@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ConditionalComponent } from './conditional/conditional.component';
+import { InputOutputComponent } from './input-output/input-output.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     path: 'conditional',
     component: ConditionalComponent
   },
+  {
+    path: 'input',
+    component: InputOutputComponent
+  }
 ];
 
 @NgModule({

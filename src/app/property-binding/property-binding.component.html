@@ -12,13 +12,15 @@
   <button class="btn btn-danger" (click)="customClass='bg-danger text-white'">Danger</button>
   <button class="btn btn-info" (click)="customClass='bg-info text-white'">Info</button>
   <button class="btn btn-warning" (click)="customClass='bg-warning text-white'">Warning</button>
-
   <button class="btn btn-info" (mouseenter)="customClass = 'bg-success text-white'" (mouseout)="customClass='bg-white '">Toggler </button>
-
   <button class="btn btn-primary" (click)="sayHello()">Say Hello</button>
-
   <button class="btn btn-primary" (click)="captureEvent($event)">Capture Event</button>
   <button class="btn btn-primary" (mouseover)="captureEvent($event)">Mouse Over</button>
 
+<hr>
 
+
+<app-message *ngIf="show_msg" [message]="lost_message" [description]="closeMsg" (clickOk)="closeIt()"></app-message>
+
+<button *ngIf="!show_msg" class="btn btn-primary" (click)="undoMsg()">Undo it</button>
 </div>

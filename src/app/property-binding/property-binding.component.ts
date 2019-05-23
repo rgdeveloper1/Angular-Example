@@ -9,6 +9,10 @@ export class PropertyBindingComponent implements OnInit {
 
   customId = 'my-custom-div-id';
   customClass = 'background-info';
+  lost_message = 'Rahul Gandhi concedes defeat in Amethi, congratulates Smriti Irani';
+  closeMsg = 'You can Close it ';
+  show_msg = true;
+
   constructor() { }
 
   ngOnInit() {
@@ -19,10 +23,18 @@ export class PropertyBindingComponent implements OnInit {
 
   captureEvent(event) {
     if (event.altKey) {
-    console.log(event);
+      console.log(event);
     } else {
-        console.log('Only works with alt');
+      console.log('Only works with alt');
     }
-}
+  }
+  closeIt() {
+    this.show_msg = false;
+    console.log('message was deleteed !!');
+  }
+  undoMsg() {
+    this.show_msg = true;
+    console.log('message Undo !!');
+  }
 
 }
